@@ -50,7 +50,9 @@ bin/kafka-server-start.sh config/kraft/server.properties
 
 to genrate the new kafka cluster id if old one is not working 
 =====
-bin/kafka-storage.sh random-uuid
+1.bin/kafka-storage.sh random-uuid
+
+2. Replace the uuid in '-t' section
 bin/kafka-storage.sh format \
   -t oSumVxNxTcO68neBgPXNrw \
   -c config/kraft/server.properties
